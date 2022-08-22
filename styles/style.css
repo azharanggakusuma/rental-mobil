@@ -1,0 +1,76 @@
+.navbar{
+    background-color: white;
+}
+
+#logo{
+    margin-left: 45px;
+}
+
+#navbar{
+    margin-right: 60px;
+}
+
+#con-card{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+h5{
+    font-size: 10px;
+}
+
+#card-1, #card-5{
+    right: 45px;
+}
+
+#card-2, #card-6{
+    right: 25px;
+}
+
+#card-3, #card-7{
+    right: 5px;
+}
+
+#card-4, #card-8{
+    left: 15px;
+}
+
+.label{
+    font-size: 12px;
+    color: white;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+@media screen and (max-width: 680px){
+    #card-1, #card-2{
+        right: -40px;
+    }
+
+    #card-3{
+        right: -35px;
+    }
+
+    #card-4{
+        left: 35px;
+    }
+
+    #card-5, #card-6{
+        left: 40px;
+    }
+
+    #card-7, #card-8{
+        left: 40px;
+    }
+
+    #logo{
+        margin-left: -60px;
+    }
+
+    #navbar{
+        margin-left: 31px;
+    }
+}

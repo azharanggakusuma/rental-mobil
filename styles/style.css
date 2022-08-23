@@ -45,6 +45,22 @@ button:disabled {
     pointer-events: all !important;
 }
 
+table{
+    width: 100%;
+}
+
+th{
+    text-align: center;
+}
+
+table td:first-child{
+    text-align: center;
+}
+
+table .total:first-child{
+    text-align: left;
+}
+
 @media screen and (max-width: 680px){
     #card-1, #card-2{
         right: -40px;

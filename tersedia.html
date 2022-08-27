@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Halaman Pemesanan</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container table-responsive">
+		<header class="text-center mt-4">
+			<h1>Form Pemesanan Rental Mobil</h1><br>
+		</header>
+		<form name="pemesanan" action="#">
+			 <div class="mb-3">
+			 	<label for="FormControlInput" class="form-label1">Nama Pemesan</label>
+			 	<input type="nama" class="form-control" id="FormControlInput">
+			 </div>
+
+			 <div class="mb-3">
+			 	<label for="FormControlInput" class="form-label2">Nomor Telepon</label>
+			 	<input type="telp" class="form-control" id="FormControlInput">
+			 </div>
+
+			<table class="table table-bordered table-hover" cellpadding=3 border=1>
+				<thead class="text-center">
+					<tr>
+						<th width=50>No</th>
+						<th width=200>Nama Mobil</th>
+						<th width=200>Harga</th>
+						<th width=200>Durasi Rental (Hari)</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td> 1.</td>
+						<td>Avanza</td>
+						<td>Rp. <input type="text" name="harga1" value="500000" size=5 readonly></td>
+						<td><center><input type="text" name="durasi1" onchange="proses()" size=12 style="text-align:center"></center></td>
+					</tr>
+
+					<tr>
+						<td> 2.</td>
+						<td>Pajero Sport</td>
+						<td>Rp. <input type="text" name="harga2" value="700000" size=5 readonly></td>
+						<td><center><input type="text" name="durasi2" onchange="proses()" size=12 style="text-align:center"></center></td>
+					</tr>
+
+					<tr>
+						<td> 3.</td>
+						<td>Almaz</td>
+						<td>Rp. <input type="text" name="harga3" value="680000" size=5 readonly></td>
+						<td><center><input type="text" name="durasi3" onchange="proses()" size=12 style="text-align:center"></center></td>
+					</tr>
+
+					<tr>
+						<td> 4.</td>
+						<td>Civic</td>
+						<td>Rp. <input type="text" name="harga4" value="650000" size=5 readonly></td>
+						<td><center><input type="text" name="durasi4" onchange="proses()" size=12 style="text-align:center"></center></td>
+					</tr>
+
+					<tr>
+						<td> 5.</td>
+						<td>Model X</td>
+						<td>Rp. <input type="text" name="harga5" value="780000" size=5 readonly></td>
+						<td><center><input type="text" name="durasi5" onchange="proses()" size=12 style="text-align:center"></center></td>
+					</tr>
+
+					<tr>
+						<td> 6.</td>
+						<td>Jazz</td>
+						<td>Rp. <input type="text" name="harga6" value="600000" size=5 readonly></td>
+						<td><center><input type="text" name="durasi6" onchange="proses()" size=12 style="text-align:center"></center></td>
+					</tr>
+
+					<tr>
+						<td> 7.</td>
+						<td>Ranger</td>
+						<td>Rp. <input type="text" name="harga7" value="710000" size=5 readonly></td>
+						<td><center><input type="text" name="durasi7" onchange="proses()" size=12 style="text-align:center"></center></td>
+					</tr>
+				</tbody>
+
+					<tr>
+						<td class="total" colspan=3>Jumlah Total</td>
+						<td>Rp. <input type="text" name="total" size=8 style="text-align:center" readonly></td>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="total" colspan=3>Diskon</td>
+						<td>Rp. <input type="text" name="potongan" size=8 style="text-align:center" readonly></td>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="total" colspan=3>Jumlah Bayar</td>
+						<td>Rp. <input type="text" name="bayar" size=8 style="text-align:center" readonly></td>
+					</tr>
+			</table><br>
+
+			<div class="text-center d-grid gap-2 d-md-flex justify-content-md-center">
+				<a href="#" class="btn btn-success" onclick="onClick()" role="button">Pesan</a>
+				<a href="mobil.html" class="btn btn-danger" onclick="batal()" role="button">Batal</a>
+			</div><br>
+
+			<script>
+				function onClick(){
+					alert("Pemesanan Telah Berhasil Dilakukan. Terima Kasih!");
+				}
+			</script>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="script/index.js"></script>
+</body>
+</html>
